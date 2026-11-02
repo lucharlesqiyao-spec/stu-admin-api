@@ -11,3 +11,11 @@ def read_root():
 @app.get("/greeting/{name}")
 def read_greeting(name: str):
     return {"Hello, how are u ": name}
+
+@app.get("/greeting")
+def read_greeting(name: str):
+    return {"Hello, hello ": name}
+
+@app.post("/greet")
+def greeting(name: str):
+    return {"post, hello ": name}

@@ -11,6 +11,8 @@ pip install uvicorn[standard]
 - start up
 ```shell
 fastapi dev main.py
+uvicorn main:app --reload
+pip freeze > requirements.txt
 
 ```
 
